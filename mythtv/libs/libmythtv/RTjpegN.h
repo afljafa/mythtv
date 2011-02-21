@@ -25,6 +25,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 #define __RTJPEG_H__
 
 #include "mythconfig.h"
+#include <stdint.h>
 
 /*
  * Macros and definitions used internally to RTjpeg

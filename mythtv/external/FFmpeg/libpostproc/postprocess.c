@@ -970,6 +970,7 @@ pp_context *pp_get_context(int width, int height, int cpuCaps){
     int qpStride= (width+15)/16 + 2; //assumed / will realloc if needed
     int cpuflags;
 
+#if 0
     if (CONFIG_RUNTIME_CPUDETECT &&
         !(cpuCaps & (PP_CPU_CAPS_MMX   | PP_CPU_CAPS_MMX2    |
                      PP_CPU_CAPS_3DNOW | PP_CPU_CAPS_ALTIVEC ))) {
@@ -984,6 +985,7 @@ pp_context *pp_get_context(int width, int height, int cpuCaps){
         if (HAVE_ALTIVEC && cpuflags & FF_MM_ALTIVEC)
             cpuCaps |= PP_CPU_CAPS_ALTIVEC;
     }
+#endif
 
     memset(c, 0, sizeof(PPContext));
     c->av_class = &av_codec_context_class;

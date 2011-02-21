@@ -7,7 +7,6 @@ DEPENDPATH *= $${INCLUDEPATH}
 LIBS += -L$${LIBDIR} $$EXTRA_LIBS -lmythbase-$$LIBVERSION
 LIBS += -lmyth-$$LIBVERSION -lmythui-$$LIBVERSION -lmythupnp-$$LIBVERSION
 LIBS += -lmythavcodec
-LIBS += -lmythavcore
 LIBS += -lmythavutil
 LIBS += -lmythavformat
 
